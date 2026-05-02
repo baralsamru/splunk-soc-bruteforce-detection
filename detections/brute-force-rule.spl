@@ -1,0 +1,1 @@
+index=wineventlog EventCode=4625 | bin _time span=5m | stats count by _time, src, Account_Name | where count >= 3
