@@ -38,6 +38,9 @@ index=wineventlog EventCode=4625
 
 #What I Learned
 How to ingest Windows logs into Splunk
+
 How authentication logs are structured
+
 How to detect brute force patterns using SPL
+
 Basic SOC investigation workflow
