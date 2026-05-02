@@ -5,6 +5,7 @@ Overview
 This project demonstrates basic Security Operations Center (SOC) monitoring using Splunk. Windows Event Logs were ingested into Splunk to detect and analyze failed login attempts.
 
 #Tools Used
+
 Splunk Enterprise
 Windows Event Viewer
 Windows Security Logs
