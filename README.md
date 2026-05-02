@@ -7,21 +7,30 @@ This project demonstrates basic Security Operations Center (SOC) monitoring usin
 #Tools Used
 
 Splunk Enterprise
+
 Windows Event Viewer
+
 Windows Security Logs
 
 #Data Source
+
 Windows Event Logs (Security)
+
 EventCode 4625 (Failed logins)
+
 EventCode 4624 (Successful logins)
+
 
 #Detection Logic
 
 #Failed Login Detection
+
 index=wineventlog EventCode=4625
 | stats count by src, Account_Name
 
+
 #Brute Force Detection Rule
+
 index=wineventlog EventCode=4625
 | bin _time span=5m
 | stats count by _time, src, Account_Name
